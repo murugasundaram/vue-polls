@@ -25,10 +25,10 @@ import { Link } from '@inertiajs/vue3';
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+            <li class="nav-item" :class="route().current('dashboard') ? 'active' : ''">
+                <Link :href="route('dashboard')" class="nav-link">
+                    <i class="fas fa-fw fa-tachometer-alt"></i><span>Dashboard</span>
+                </Link>
             </li>
 
             <!-- Divider -->

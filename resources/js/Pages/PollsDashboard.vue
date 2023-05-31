@@ -334,6 +334,6 @@ export default {
     components : {
         AppLayout
     }
-
 }
+
 </script>
